@@ -1,0 +1,55 @@
+body {
+    background-color: #f8f9fa;
+  }
+  .profile-header {
+    background-color: #007bff;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+  .profile-header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profile-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .profile-stats-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-stats {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+  .profile-stats h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .profile-stats p {
+    margin: 5px 0;
+    color: #6c757d;
+  }
+  .skills {
+    list-style: none;
+    padding: 0;
+  }
+  .skills li {
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    font-size: 14px;
+  }

@@ -1,0 +1,121 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.custom-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.custom-card-text {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.custom-card-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Styling for vertical navigation */
+.vertical-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding-top: 20px;
+  background: #ffffff8b;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(0); /* Always visible by default */
+  transition: transform 0.3s ease;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  z-index: 1000;
+}
+
+.vertical-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.vertical-nav ul li {
+  margin: 10px 0;
+}
+
+.vertical-nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 18px;
+}
+
+.vertical-nav ul li a:hover {
+    color: #3498db;
+  border-radius: 5px;
+}
+
+.content-wrapper {
+  margin-left: 220px; /* Account for the width of the nav */
+  padding: 20px;
+}
+
+/* Mobile styles */
+.mobile-toggle {
+  color: var(--nav-color);
+  font-size: 28px;
+  line-height: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1001;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: #ffffff00;
+  padding: 10px;
+}
+
+/* Mobile Navigation Hidden by Default */
+.vertical-nav.show {
+  transform: translateX(0);
+}
+
+@media (max-width: 1199px) {
+  .vertical-nav {
+    transform: translateX(-100%); /* Hidden by default on mobile */
+  }
+  .mobile-toggle {
+    display: inline-block; /* Show toggle button on mobile */
+  }
+}
+
+@media (min-width: 1200px) {
+.vertical-nav {
+    transform: translateX(-100%); /* Hidden by default on mobile */
+  }
+  .mobile-toggle {
+    display: inline-block; /* Show toggle button on larger screens */
+  }
+
+
+  .content-wrapper {
+    margin-left: 220px; /* Account for the width of the nav */
+  }
+}
