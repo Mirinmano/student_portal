@@ -44,8 +44,8 @@ const InternCertificate = ({submissions}) => {
                         <img src="https://static.vecteezy.com/system/resources/thumbnails/004/805/384/small/graduation-certificate-template-free-vector.jpg" className="card-img-top" alt="House Image" />
                         <div className="custom-card-body card-body">
                             <span className="badge badge-danger">{submission.payment}</span>
-                            <h5 class="custom-card-title">{submission.title}</h5>
-                            <p class="custom-card-text">{submission.company}</p>
+                            <h5 className="custom-card-title">{submission.title}</h5>
+                            <p className="custom-card-text">{submission.company}</p>
                         </div>
                     </div>
                 </div>

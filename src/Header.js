@@ -40,7 +40,7 @@ const Header = () => {
                 <ul>
                   <li><a href="/eventcertificate"style={{textDecorationLine:'none'}}>Event</a></li>
                   <li><a href="/interncertificate"style={{textDecorationLine:'none'}}>Internship</a></li>
-                  <li><a href="/coursecertificate"style={{textDecorationLine:'none'}}>Course</a></li>
+                  <li><a href="/course"style={{textDecorationLine:'none'}}>Course</a></li>
                 </ul>
               </li>
               <li><a href="/upload"style={{textDecorationLine:'none'}}>Upload</a></li>

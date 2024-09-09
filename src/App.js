@@ -76,14 +76,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Body />} />
         <Route path='/home' element={<Body />} />
-        <Route path='/courcecertificate' element={<CourceCertificate
-          submissions = {submissions}
-        />} />
         <Route path='/eventcertificate' element={<EventCertificate 
           submissions = {submissions}
         />} />
         <Route path='/interncertificate' element={<InternCertificate 
           submissions = {submissions}
+        />} />
+        <Route path='/course' element={<CourceCertificate 
+          submissions={submissions}
         />} />
         <Route path='/upload' element={<Upload 
           addTitle = {addTitle}
